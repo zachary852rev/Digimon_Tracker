@@ -1,0 +1,19 @@
+2022-07-20 15:20:14,713 :: Starting
+2022-07-20 15:20:16,218 :: Returning
+2022-07-20 15:20:16,222 :: Loaded Digimon into catalog successfully.
+2022-07-20 15:20:30,577 :: Inserted a new Digimon into catalog.
+2022-07-20 15:20:31,586 :: Successfully saved Digimon to Digimon_Info.csv
+2022-07-20 15:21:09,334 :: Starting
+2022-07-20 15:21:10,937 :: Returning
+2022-07-20 15:21:10,940 :: Loaded Digimon into catalog successfully.
+2022-07-20 15:21:12,299 :: Successfully saved Digimon to Digimon_Info.csv
+2022-07-20 15:21:28,768 :: Starting
+2022-07-20 15:21:30,374 :: Returning
+2022-07-20 15:21:30,381 :: Loaded Digimon into catalog successfully.
+2022-07-20 15:21:32,986 :: Successfully saved Digimon to Digimon_Info.csv
+2022-07-20 15:21:51,007 :: Starting
+2022-07-20 15:21:52,508 :: Returning
+2022-07-20 15:21:52,514 :: Loaded Digimon into catalog successfully.
+2022-07-20 15:21:59,178 :: User attempted to enter comma into device name.
+2022-07-20 15:22:50,200 :: Inserted a new Digimon into catalog.
+2022-07-20 15:22:51,674 :: Successfully saved Digimon to Digimon_Info.csv
