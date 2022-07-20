@@ -1,3 +1,4 @@
+
 # This is the main Digimon class.
 class Digimon():
     def __init__(self, device, version, shape, color=""):
@@ -39,8 +40,9 @@ class Digimon():
 
 
     def __str__(self): 
-        return "Device: " + self._device + ", Version: " + self._version + ", Shape: " + self._shape + ", Color: " + self._color
+        return "» Device: " + self._device + ", Version: " + self._version + ", Shape: " + self._shape + ", Color: " + self._color
 
+# If time allows, would like to implement an active/inactive system
 class Active(Digimon):
     def active(self):
         print(self._device, " is active.")

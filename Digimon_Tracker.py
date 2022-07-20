@@ -23,7 +23,7 @@ def main():
     """)
 
     # Current version info
-    print("          Version 1.01")
+    print("               Version 1.01")
     print("_"*50)
     playsound(Path(__file__).parent / 'Digi_Beep.mp3')
     print("\nWelcome to the Digimon Tracker, a way to catalog all of your digital monsters!\n")
@@ -43,7 +43,7 @@ def main():
         lst_digimon.append(digimon)
     
     # Prints current catalog of devices
-    print("\n\n----------Current Catalog----------\n")
+    print("\n\n-------»Current Catalog«-------\n")
     for elem in lst_digimon:
         print(elem)
     print("-----------------------------------")
