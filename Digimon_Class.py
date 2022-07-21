@@ -1,4 +1,3 @@
-
 # This is the main Digimon class.
 class Digimon():
     def __init__(self, device, version, shape, color=""):
