@@ -155,7 +155,7 @@ def insert_digimon() -> Digimon:
             break
 
     if loop_start == "1":
-        digimon = Active(device.rstrip(), version.rstrip(), shape.rstrip(), color.rstrip())
+        digimon = Active(device, version, shape, color)
     else:
         digimon = None
 
