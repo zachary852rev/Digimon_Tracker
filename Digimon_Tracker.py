@@ -43,15 +43,15 @@ def main():
         lst_digimon.append(digimon)
     
     # Prints current catalog of devices
-    print("\n\n-------»Current Catalog«-------\n")
+    print("\n\n----------Current Catalog----------\n")
     for elem in lst_digimon:
         print(elem)
-    print("-----------------------------------")
+    print("\n-----------------------------------")
 
     # Saves Digimon into the .csv file
     save_digimon(fname, lst_digimon)
     logging.info("Successfully saved Digimon to " + fname)
-    print("\n\n")
+    print("\n")
 
 
 
@@ -159,6 +159,7 @@ def insert_digimon() -> Digimon:
     else:
         digimon = None
 
+    print("\nDigimon entered into catalog successfully!")
     return digimon
 
 
