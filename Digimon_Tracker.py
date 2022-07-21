@@ -60,7 +60,7 @@ def save_digimon(fname, lst_digimon):
     with open(fname, "w") as f:
         for digimon in lst_digimon:
             if type(digimon) == Active:
-                f.write(digimon._device + "," + digimon._version + "," + digimon._shape + "," + digimon._color + "\n")
+                f.write(digimon._device + "," + digimon._version + "," + digimon._shape + "," + digimon._color +"\n")
             elif type(digimon) == Inactive:
                 f.write(digimon._device + "," + digimon._version + "," + digimon._shape + "," + digimon._color + "\n")
             else:
@@ -109,8 +109,16 @@ def insert_digimon() -> Digimon:
 
             if check != None:
                 raise ValueError
+            check = re.search('!', device)
+
+            if check != None:
+                raise ValueError
+            check = re.search('?', device)
+
+            if check != None:
+                raise ValueError
         except ValueError as ve:
-            print("\nDevice name cannot contain commas.\n")
+            print("\nDevice name cannot special characters (commas, questions marks or exclamation).\n")
             logging.error("User attempted to enter comma into device name.")
         else:
             break
@@ -122,8 +130,16 @@ def insert_digimon() -> Digimon:
 
             if check != None:
                 raise ValueError
+            check = re.search('!', version)
+
+            if check != None:
+                raise ValueError
+            check = re.search('?', version)
+
+            if check != None:
+                raise ValueError
         except ValueError as ve:
-            print("\nVersion name cannot contain commas.\n")
+            print("\nVersion name cannot special characters (commas, questions marks or exclamation).\n")
             logging.error("User attempted to enter comma into version name.")
         else:
             break
@@ -135,11 +151,20 @@ def insert_digimon() -> Digimon:
 
             if check != None:
                 raise ValueError
+            check = re.search('!', shape)
+
+            if check != None:
+                raise ValueError
+            check = re.search('?', shape)
+
+            if check != None:
+                raise ValueError
         except ValueError as ve:
-            print("\nShape name cannot contain commas.\n")
+            print("\nName of shape cannot special characters (commas, questions marks or exclamation).\n")
             logging.error("User attempted to enter comma into shape name.")
         else:
             break
+
 
     while True:
         try:
@@ -148,17 +173,27 @@ def insert_digimon() -> Digimon:
 
             if check != None:
                 raise ValueError
+            check = re.search('!', color)
+
+            if check != None:
+                raise ValueError
+            check = re.search('?', color)
+
+            if check != None:
+                raise ValueError
         except ValueError as ve:
-            print("\nName of color cannot contain commas.\n")
+            print("\nName of color cannot special characters (commas, questions marks or exclamation).\n")
             logging.error("User attempted to enter comma into color name.")
         else:
             break
+      
 
     if loop_start == "1":
         digimon = Active(device, version, shape, color)
     else:
         digimon = None
 
+    print("\nDigimon enterted into catalog successfully!\n")
     return digimon
 
 
